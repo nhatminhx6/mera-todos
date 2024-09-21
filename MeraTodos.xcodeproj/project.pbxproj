@@ -6,63 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		CFCF70952C9E6E6E009B1824 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CFCF707C2C9E6E6D009B1824 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CFCF70832C9E6E6D009B1824;
-			remoteInfo = MeraTodos;
-		};
-		CFCF709F2C9E6E6E009B1824 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CFCF707C2C9E6E6D009B1824 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CFCF70832C9E6E6D009B1824;
-			remoteInfo = MeraTodos;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		CFCF70842C9E6E6D009B1824 /* MeraTodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeraTodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFCF70942C9E6E6E009B1824 /* MeraTodosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeraTodosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFCF709E2C9E6E6E009B1824 /* MeraTodosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeraTodosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCF70F72C9E76ED009B1824 /* MeraTodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeraTodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CFCF70862C9E6E6D009B1824 /* MeraTodos */ = {
+		CFCF70F92C9E76ED009B1824 /* MeraTodos */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MeraTodos;
-			sourceTree = "<group>";
-		};
-		CFCF70972C9E6E6E009B1824 /* MeraTodosTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MeraTodosTests;
-			sourceTree = "<group>";
-		};
-		CFCF70A12C9E6E6E009B1824 /* MeraTodosUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MeraTodosUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CFCF70812C9E6E6D009B1824 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFCF70912C9E6E6E009B1824 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFCF709B2C9E6E6E009B1824 /* Frameworks */ = {
+		CFCF70F42C9E76ED009B1824 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,22 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CFCF707B2C9E6E6D009B1824 = {
+		CFCF70EE2C9E76ED009B1824 = {
 			isa = PBXGroup;
 			children = (
-				CFCF70862C9E6E6D009B1824 /* MeraTodos */,
-				CFCF70972C9E6E6E009B1824 /* MeraTodosTests */,
-				CFCF70A12C9E6E6E009B1824 /* MeraTodosUITests */,
-				CFCF70852C9E6E6D009B1824 /* Products */,
+				CFCF70F92C9E76ED009B1824 /* MeraTodos */,
+				CFCF70F82C9E76ED009B1824 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CFCF70852C9E6E6D009B1824 /* Products */ = {
+		CFCF70F82C9E76ED009B1824 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CFCF70842C9E6E6D009B1824 /* MeraTodos.app */,
-				CFCF70942C9E6E6E009B1824 /* MeraTodosTests.xctest */,
-				CFCF709E2C9E6E6E009B1824 /* MeraTodosUITests.xctest */,
+				CFCF70F72C9E76ED009B1824 /* MeraTodos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,134 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CFCF70832C9E6E6D009B1824 /* MeraTodos */ = {
+		CFCF70F62C9E76ED009B1824 /* MeraTodos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CFCF70A82C9E6E6E009B1824 /* Build configuration list for PBXNativeTarget "MeraTodos" */;
+			buildConfigurationList = CFCF710A2C9E76EE009B1824 /* Build configuration list for PBXNativeTarget "MeraTodos" */;
 			buildPhases = (
-				CFCF70802C9E6E6D009B1824 /* Sources */,
-				CFCF70812C9E6E6D009B1824 /* Frameworks */,
-				CFCF70822C9E6E6D009B1824 /* Resources */,
+				CFCF70F32C9E76ED009B1824 /* Sources */,
+				CFCF70F42C9E76ED009B1824 /* Frameworks */,
+				CFCF70F52C9E76ED009B1824 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				CFCF70862C9E6E6D009B1824 /* MeraTodos */,
+				CFCF70F92C9E76ED009B1824 /* MeraTodos */,
 			);
 			name = MeraTodos;
 			packageProductDependencies = (
 			);
 			productName = MeraTodos;
-			productReference = CFCF70842C9E6E6D009B1824 /* MeraTodos.app */;
+			productReference = CFCF70F72C9E76ED009B1824 /* MeraTodos.app */;
 			productType = "com.apple.product-type.application";
-		};
-		CFCF70932C9E6E6E009B1824 /* MeraTodosTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CFCF70AB2C9E6E6E009B1824 /* Build configuration list for PBXNativeTarget "MeraTodosTests" */;
-			buildPhases = (
-				CFCF70902C9E6E6E009B1824 /* Sources */,
-				CFCF70912C9E6E6E009B1824 /* Frameworks */,
-				CFCF70922C9E6E6E009B1824 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CFCF70962C9E6E6E009B1824 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CFCF70972C9E6E6E009B1824 /* MeraTodosTests */,
-			);
-			name = MeraTodosTests;
-			packageProductDependencies = (
-			);
-			productName = MeraTodosTests;
-			productReference = CFCF70942C9E6E6E009B1824 /* MeraTodosTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CFCF709D2C9E6E6E009B1824 /* MeraTodosUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CFCF70AE2C9E6E6E009B1824 /* Build configuration list for PBXNativeTarget "MeraTodosUITests" */;
-			buildPhases = (
-				CFCF709A2C9E6E6E009B1824 /* Sources */,
-				CFCF709B2C9E6E6E009B1824 /* Frameworks */,
-				CFCF709C2C9E6E6E009B1824 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CFCF70A02C9E6E6E009B1824 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CFCF70A12C9E6E6E009B1824 /* MeraTodosUITests */,
-			);
-			name = MeraTodosUITests;
-			packageProductDependencies = (
-			);
-			productName = MeraTodosUITests;
-			productReference = CFCF709E2C9E6E6E009B1824 /* MeraTodosUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CFCF707C2C9E6E6D009B1824 /* Project object */ = {
+		CFCF70EF2C9E76ED009B1824 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					CFCF70832C9E6E6D009B1824 = {
+					CFCF70F62C9E76ED009B1824 = {
 						CreatedOnToolsVersion = 16.0;
-					};
-					CFCF70932C9E6E6E009B1824 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = CFCF70832C9E6E6D009B1824;
-					};
-					CFCF709D2C9E6E6E009B1824 = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = CFCF70832C9E6E6D009B1824;
 					};
 				};
 			};
-			buildConfigurationList = CFCF707F2C9E6E6D009B1824 /* Build configuration list for PBXProject "MeraTodos" */;
+			buildConfigurationList = CFCF70F22C9E76ED009B1824 /* Build configuration list for PBXProject "MeraTodos" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = CFCF707B2C9E6E6D009B1824;
+			mainGroup = CFCF70EE2C9E76ED009B1824;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = CFCF70852C9E6E6D009B1824 /* Products */;
+			productRefGroup = CFCF70F82C9E76ED009B1824 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CFCF70832C9E6E6D009B1824 /* MeraTodos */,
-				CFCF70932C9E6E6E009B1824 /* MeraTodosTests */,
-				CFCF709D2C9E6E6E009B1824 /* MeraTodosUITests */,
+				CFCF70F62C9E76ED009B1824 /* MeraTodos */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CFCF70822C9E6E6D009B1824 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFCF70922C9E6E6E009B1824 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFCF709C2C9E6E6E009B1824 /* Resources */ = {
+		CFCF70F52C9E76ED009B1824 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,21 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CFCF70802C9E6E6D009B1824 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFCF70902C9E6E6E009B1824 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFCF709A2C9E6E6E009B1824 /* Sources */ = {
+		CFCF70F32C9E76ED009B1824 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,21 +124,8 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		CFCF70962C9E6E6E009B1824 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CFCF70832C9E6E6D009B1824 /* MeraTodos */;
-			targetProxy = CFCF70952C9E6E6E009B1824 /* PBXContainerItemProxy */;
-		};
-		CFCF70A02C9E6E6E009B1824 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CFCF70832C9E6E6D009B1824 /* MeraTodos */;
-			targetProxy = CFCF709F2C9E6E6E009B1824 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		CFCF70A62C9E6E6E009B1824 /* Debug */ = {
+		CFCF71082C9E76EE009B1824 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		CFCF70A72C9E6E6E009B1824 /* Release */ = {
+		CFCF71092C9E76EE009B1824 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -388,7 +244,7 @@
 			};
 			name = Release;
 		};
-		CFCF70A92C9E6E6E009B1824 /* Debug */ = {
+		CFCF710B2C9E76EE009B1824 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -416,7 +272,7 @@
 			};
 			name = Debug;
 		};
-		CFCF70AA2C9E6E6E009B1824 /* Release */ = {
+		CFCF710C2C9E76EE009B1824 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -441,117 +297,31 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		CFCF70AC2C9E6E6E009B1824 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mera.todos.MeraTodosTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeraTodos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeraTodos";
-			};
-			name = Debug;
-		};
-		CFCF70AD2C9E6E6E009B1824 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mera.todos.MeraTodosTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeraTodos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeraTodos";
-			};
-			name = Release;
-		};
-		CFCF70AF2C9E6E6E009B1824 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mera.todos.MeraTodosUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MeraTodos;
-			};
-			name = Debug;
-		};
-		CFCF70B02C9E6E6E009B1824 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mera.todos.MeraTodosUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MeraTodos;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CFCF707F2C9E6E6D009B1824 /* Build configuration list for PBXProject "MeraTodos" */ = {
+		CFCF70F22C9E76ED009B1824 /* Build configuration list for PBXProject "MeraTodos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFCF70A62C9E6E6E009B1824 /* Debug */,
-				CFCF70A72C9E6E6E009B1824 /* Release */,
+				CFCF71082C9E76EE009B1824 /* Debug */,
+				CFCF71092C9E76EE009B1824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CFCF70A82C9E6E6E009B1824 /* Build configuration list for PBXNativeTarget "MeraTodos" */ = {
+		CFCF710A2C9E76EE009B1824 /* Build configuration list for PBXNativeTarget "MeraTodos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFCF70A92C9E6E6E009B1824 /* Debug */,
-				CFCF70AA2C9E6E6E009B1824 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CFCF70AB2C9E6E6E009B1824 /* Build configuration list for PBXNativeTarget "MeraTodosTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CFCF70AC2C9E6E6E009B1824 /* Debug */,
-				CFCF70AD2C9E6E6E009B1824 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CFCF70AE2C9E6E6E009B1824 /* Build configuration list for PBXNativeTarget "MeraTodosUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CFCF70AF2C9E6E6E009B1824 /* Debug */,
-				CFCF70B02C9E6E6E009B1824 /* Release */,
+				CFCF710B2C9E76EE009B1824 /* Debug */,
+				CFCF710C2C9E76EE009B1824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CFCF707C2C9E6E6D009B1824 /* Project object */;
+	rootObject = CFCF70EF2C9E76ED009B1824 /* Project object */;
 }
