@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Foundation
+import UniformTypeIdentifiers.UTType
 
 struct Home: View {
     @StateObject var taskModel : TaskViewModel = .init()
@@ -16,7 +18,8 @@ struct Home: View {
     
     @Environment(\.self) var env
     
-    @FetchRequest(entity: Task.entity(), sortDescriptors: [NSSortDescriptor(keyPath:\Task.deadline, ascending: false)], predicate: nil, animation: .easeInOut) var tasks: FetchedResults<Task>
+    @FetchRequest(entity: Task.entity(), sortDescriptors: [NSSortDescriptor(keyPath:\Task.deadline, ascending: false)], predicate: nil, animation: .easeInOut)
+    var tasks: FetchedResults<Task>
     
     var body: some View {
         ScrollView {
@@ -49,9 +52,7 @@ struct Home: View {
                     } label: {
                         Image(systemName: "plus.circle.fill").font(.system(size: 32.0))
                     }
-                    
                     .sheet(isPresented: $isShowingSheet) {
-                        
                         AddNewTask()
                             .environmentObject(taskModel)
                     }.onAppear{
@@ -59,7 +60,6 @@ struct Home: View {
                         taskModel.requestAuthorization()
                     }
                 }
-                
                 TaskView()
             }.frame(maxWidth: .infinity, alignment: .leading)
         }
@@ -116,6 +116,7 @@ struct Home: View {
                 TaskRowView(task: task)
             }
         }
+ 
     }
     
     @ViewBuilder
@@ -133,6 +134,7 @@ struct Home: View {
                 
                 Menu {
                     Button("Edit", action: {
+                        print("MERALOG ===>    \(tasks[0].title)   ==> \(task.title)")
                         taskModel.openEditTask = true
                         if taskModel.openEditTask{
                             taskModel.editTask = task
@@ -153,7 +155,7 @@ struct Home: View {
             }
             Text(task.title ?? "")
                 .font(.title2.bold())
-                .foregroundColor(.black)
+                .foregroundColor(.white)
                 .padding(.vertical,10)
             HStack(alignment:.bottom,spacing: 0){
                 VStack(alignment:.leading,spacing: 10){
@@ -192,6 +194,85 @@ struct Home: View {
     }
     
 }
+
+
+struct ReorderableForEach<Content: View, Item: Identifiable & Equatable>: View {
+    let items: [Item]
+    let content: (Item) -> Content
+    let moveAction: (IndexSet, Int) -> Void
+    
+    // A little hack that is needed in order to make view back opaque
+    // if the drag and drop hasn't ever changed the position
+    // Without this hack the item remains semi-transparent
+    @State private var hasChangedLocation: Bool = false
+
+    init(
+        items: [Item],
+        @ViewBuilder content: @escaping (Item) -> Content,
+        moveAction: @escaping (IndexSet, Int) -> Void
+    ) {
+        self.items = items
+        self.content = content
+        self.moveAction = moveAction
+    }
+    
+    @State private var draggingItem: Item?
+    
+    var body: some View {
+        ForEach(items) { item in
+            content(item)
+                .overlay(draggingItem == item && hasChangedLocation ? Color.white.opacity(0.8) : Color.clear)
+                .onDrag {
+                    draggingItem = item
+                    return NSItemProvider(object: "\(item.id)" as NSString)
+                }
+                .onDrop(
+                    of: [UTType.text],
+                    delegate: DragRelocateDelegate(
+                        item: item,
+                        listData: items,
+                        current: $draggingItem,
+                        hasChangedLocation: $hasChangedLocation
+                    ) { from, to in
+                        withAnimation {
+                            moveAction(from, to)
+                        }
+                    }
+                )
+        }
+    }
+}
+
+struct DragRelocateDelegate<Item: Equatable>: DropDelegate {
+    let item: Item
+    var listData: [Item]
+    @Binding var current: Item?
+    @Binding var hasChangedLocation: Bool
+
+    var moveAction: (IndexSet, Int) -> Void
+
+    func dropEntered(info: DropInfo) {
+        guard item != current, let current = current else { return }
+        guard let from = listData.firstIndex(of: current), let to = listData.firstIndex(of: item) else { return }
+        
+        hasChangedLocation = true
+
+        if listData[to] != current {
+            moveAction(IndexSet(integer: from), to > from ? to + 1 : to)
+        }
+    }
+    
+    func dropUpdated(info: DropInfo) -> DropProposal? {
+        DropProposal(operation: .move)
+    }
+    
+    func performDrop(info: DropInfo) -> Bool {
+        hasChangedLocation = false
+        current = nil
+        return true
+    }
+}
+
 
 //struct Home_Previews: PreviewProvider {
 //    static var previews: some View {
